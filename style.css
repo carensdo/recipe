@@ -56,4 +56,88 @@ rgba(122, 191, 191, .5)
 */
 
 /*fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+html {
+	background-color: rgba(122, 191, 191, .5);
+}
+body {
+	width: 414px;
+	background-color: #f2f2f2;
+	margin: 0 auto;
+}
+h1 {
+	text-align: center;
+	padding-top: 200px;
+	font-size: 40px;
+	font-family: 'Bebas Neue';
+}
+menu{
+	height: 70px;
+	padding-top: 30px;
+	display: flex;
+	flex-direction: row;
+	
+}
+menu li{
+	flex: 410px;
+	font-size: 16px;
+	list-style: none;
+}
+menu a {
+	display: block;
+	position: relative;
+	top:30px;
+	left: 22px;;
+	text-decoration: none;
+	color: #eb5428;
+	text-align: center;
+	font-size: 20px;
+}
+menu svg{
+	position:relative;
+	bottom: 30px;
+	right: 45px;
+	
+}
+img.taco{
+	padding-top: 15px;
+	width: 100%;
+}
+p{
+	padding-top: 1rem;
+	padding-left: 10px;
+	font-size: 16px;
+	line-height: 1.5rem;
+}
+h2{
+	font-size: 30px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	text-align: center;
+}
+h3{
+	font-size: 25px;
+}
+dl{
+	padding-left: 1rem;
+}
+dt{
+	font-size: 16px;
+}
+dd{
+	font-size: 16px;
+	
+}
+ul, ol{
+	padding-left: 1.5rem;
+	line-height: 1.5rem;
+}
+section.ingredients ul{
+	list-style:square;
+}
+ol{
+	list-style-type: style;
+	padding-right: 1rem;
+}
