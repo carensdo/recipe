@@ -120,15 +120,20 @@ h2{
 h3{
 	font-size: 25px;
 }
-dl{
+div dl{
+	display: grid;
+	grid-template-columns: 1fr 3.5fr;
 	padding-left: 1rem;
+
 }
 dt{
+	grid-column-start: 1;
 	font-size: 16px;
 }
 dd{
+	grid-column-start: 2;
 	font-size: 16px;
-	
+
 }
 ul, ol{
 	padding-left: 1.5rem;
