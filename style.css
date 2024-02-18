@@ -120,7 +120,7 @@ h2{
 h3{
 	font-size: 25px;
 }
-div dl{
+.details dl{
 	display: grid;
 	grid-template-columns: 1fr 3.5fr;
 	padding-left: 1rem;
@@ -138,6 +138,7 @@ dd{
 ul, ol{
 	padding-left: 1.5rem;
 	line-height: 1.5rem;
+	padding-bottom: 1rem;
 }
 section.ingredients ul{
 	list-style:square;
@@ -145,4 +146,36 @@ section.ingredients ul{
 ol{
 	list-style-type: style;
 	padding-right: 1rem;
+}
+section.dishes{
+	background-color: #7abfbf;
+
+}
+footer{
+	background-color: white;
+}
+div img{
+	display: block;
+	position: relative;
+	left: 10px;
+	bottom: 20px;
+	width: 100px;
+}
+.dishes div{
+	display: grid;
+	grid-template-columns: 1.75fr 4fr;
+	align-items: center;
+}
+.dishes svg{
+	position: relative;
+	left: 120px;
+	bottom: 45px;
+}
+h3{
+	position: relative;
+	left: 125px;
+	top: 5px;
+}
+.dishes dt, dd{
+	line-height: 1.5rem;
 }
