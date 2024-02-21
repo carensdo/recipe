@@ -215,7 +215,14 @@ h3{
 }
 .menu-icon{
     font-family: 'Bebas Neue';
+    left: 35px;
 }
+.menu-icon svg{
+    position: relative;
+    bottom: 15px;
+    right: 40px;
+}
+
 nav a img{
     display: none;
 }
@@ -228,7 +235,7 @@ nav span {
 }
 span a, label{
     position: relative;
-    bottom: 140rem;
+    bottom: 139.75rem;
     text-decoration: none;
     color: #0d0d0d;
 }
@@ -240,7 +247,7 @@ span a, label{
 }
 .search-container{
     position: relative;
-    bottom: 140rem;
+    bottom: 143rem;
 }
 
 .avatar{
@@ -252,7 +259,6 @@ span a, label{
     
 }
 .avatar svg{
-    background-color: #ffffff;
     position: relative;
     right: 3.5rem;
     bottom: 1rem;
@@ -260,10 +266,24 @@ span a, label{
 }
 .spatula-knife{
     left: 6rem;
-    background: #eb5428;
 
 }
 button{
     background-color: #eb5428;
-    border-color: #ffffff;
+    border: none;
+    position: relative;
+    right: 5px;
+    top: 14px;
+    height: 46px;
+}
+.search-container{
+    position: relative;
+    left: 2.25rem;
+    border-color: #eb5428;
+}
+input{
+    width: 17.5rem;
+    height: 40px;
+    position: relative;
+    border: solid 2px #eb5428;
 }
