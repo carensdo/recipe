@@ -81,12 +81,18 @@ menu{
 	
 }
 menu li{
+    font-family: 'Bebas Neue';
 	flex: 410px;
 	font-size: 16px;
 	list-style: none;
 }
 li a{
 	font-family: 'Bebas Neue';
+    text-decoration: none;
+    color: #eb5428;
+}
+nav a{
+    font-size: 20px;
 }
 menu a {
 	display: block;
@@ -133,13 +139,19 @@ h3{
 }
 .details dl{
 	padding-left: 1rem;
+}
+.details dt{
+        font-weight: bold;
 	
 }
 dt{
 	grid-column-start: 1;
 	font-size: 16px;
 }
-dd{
+dl{
+    line-height: 1.5rem;
+}
+.details dd{
 	grid-column-start: 2;
 	font-size: 16px;
 	padding-left: 10px;
@@ -168,6 +180,7 @@ footer{
 	background-color: white;
 	font-family: 'Bebas Neue';
 }
+
 div img{
 	display: block;
 	position: relative;
@@ -183,7 +196,7 @@ div img{
 .dishes svg{
 	position: relative;
 	left: 120px;
-	bottom: 45px;
+	bottom: 30px;
 }
 h3{
 	position: relative;
@@ -191,5 +204,66 @@ h3{
 	top: 5px;
 }
 .dishes dt, dd{
-	line-height: 1.5rem;
+	position: relative;
+    bottom: 8px;
+}
+.dishes dd{
+    font-weight: bold;
+}
+.main-nav, .dropdown{
+    display: none;
+}
+.menu-icon{
+    font-family: 'Bebas Neue';
+}
+nav a img{
+    display: none;
+}
+nav span {
+    font-family: 'Bebas Neue';
+    text-decoration: none;
+    font-size: 20px;
+    color: #0d0d0d;
+    
+}
+span a, label{
+    position: relative;
+    bottom: 140rem;
+    text-decoration: none;
+    color: #0d0d0d;
+}
+.categories li{
+    display: none;
+}
+.search{
+    display: none;
+}
+.search-container{
+    position: relative;
+    bottom: 140rem;
+}
+
+.avatar{
+    left: 19rem;
+    bottom: 143.5rem;
+    width: 5rem;
+    margin: 20px;
+    text-align: center;
+    
+}
+.avatar svg{
+    background-color: #ffffff;
+    position: relative;
+    right: 3.5rem;
+    bottom: 1rem;
+    
+}
+.spatula-knife{
+    left: 6rem;
+    background: #eb5428;
+
+}
+button{
+    background-color: #eb5428;
+    border-color: #ffffff;
 }
