@@ -222,7 +222,10 @@ h3{
     bottom: 15px;
     right: 40px;
 }
-
+.nav2{
+    background-color: #ffffff;
+    
+}
 nav a img{
     display: none;
 }
@@ -262,12 +265,12 @@ span a, label{
     position: relative;
     right: 3.5rem;
     bottom: 1rem;
-    
 }
 .spatula-knife{
     left: 6rem;
 
 }
+
 button{
     background-color: #eb5428;
     border: none;
