@@ -114,7 +114,7 @@ img.taco{
 	padding-top: 15px;
 	width: 100%;
 }
-p{
+header p{
 	padding-top: 1rem;
 	padding-left: 10px;
 	font-size: 16px;
@@ -198,7 +198,7 @@ div img{
 	left: 120px;
 	bottom: 30px;
 }
-h3{
+.dishes h3{
 	position: relative;
 	left: 125px;
 	top: 5px;
@@ -289,4 +289,18 @@ input{
     height: 40px;
     position: relative;
     border: solid 2px #eb5428;
+}
+footer img{
+    width: 50%;
+    position: relative;
+    left: 6.5rem;
+    padding-bottom: 3rem;
+}
+footer h3{
+    display: none;
+}
+footer p{
+    text-align: center;
+    position: relative;
+    top: 16rem;
 }
