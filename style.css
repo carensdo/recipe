@@ -263,7 +263,7 @@ span a, label{
 }
 .search-container{
     position: relative;
-    bottom: 134rem;
+    bottom: 171rem;
 }
 
 .avatar{
@@ -354,7 +354,6 @@ footer p{
 		width: 768px;
 	}
 	.nav2{
-
 		width: 768px;
 		height: 125px;
 	}
@@ -362,6 +361,7 @@ footer p{
 		box-shadow: none;
 	}
 	.avatar{
+		display: block;
 		bottom: 280px;
 		left: 659px;
 	}
@@ -394,6 +394,21 @@ footer p{
 	h1{
 		text-align: left;
 		padding-left: 10px;
+	}
+	header img{
+
+	}
+	menu{
+		background:rgba(194, 189, 189, 0.2);
+		padding-bottom: 40px;
+	}
+	.details div{
+		justify-content: center;
+		justify-items: center;
+	}
+	div .directions{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 	}
 }
 @media screen and (min-width:1280px) {
