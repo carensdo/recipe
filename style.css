@@ -216,15 +216,29 @@ div img{
 .menu-icon{
     font-family: 'Bebas Neue';
     left: 35px;
+	bottom: 0;
 }
-.menu-icon svg{
-    position: relative;
-    bottom: 15px;
-    right: 40px;
+.hamburger{
+	position: relative;
+	right: 41px;
+	bottom: 20px;
+}
+.nav2 label{
+	position: relative;
+	top: 45px;
 }
 .nav2{
-    background-color: #ffffff;
+	background: #ffffff;
+    position: fixed;
+	height: 60px;
+	width: 300px;
+	top: 0;
+	padding-bottom: 40px;
+	box-shadow: 1px 3px 4px rgba(132, 127, 127, 0.8);
     
+}
+span a{
+	box-shadow: 1px 3px 4px rgba(132, 127, 127, 0.8);
 }
 nav a img{
     display: none;
@@ -234,7 +248,6 @@ nav span {
     text-decoration: none;
     font-size: 20px;
     color: #0d0d0d;
-    
 }
 span a, label{
     position: relative;
@@ -243,32 +256,45 @@ span a, label{
     color: #0d0d0d;
 }
 .categories li{
-    display: none;
+    visibility: hidden;
 }
 .search{
     display: none;
 }
 .search-container{
     position: relative;
-    bottom: 143rem;
+    bottom: 134rem;
 }
 
 .avatar{
-    left: 19rem;
-    bottom: 143.5rem;
-    width: 5rem;
-    margin: 20px;
-    text-align: center;
+	text-align: center;
+    bottom: 0;
+	background-color: #ffffff;
+	display: block;
+	left: 305px;
+	bottom: 332px;
+	width: 109px;
+	height: 30px;
+	padding-top: 70px;
     
 }
 .avatar svg{
-    position: relative;
-    right: 3.5rem;
-    bottom: 1rem;
+	position: relative;
+    bottom: 65px;
 }
 .spatula-knife{
-    left: 6rem;
-
+    background: #eb5428;
+	bottom:0;
+	width: 200px;
+	display: block;
+	left: 105px;
+	height: 100px;
+	bottom: 44px;
+}
+.spatula-knife svg{
+	position: relative;
+	left: 70px;
+	top: 20px;
 }
 
 button{
@@ -290,11 +316,30 @@ input{
     position: relative;
     border: solid 2px #eb5428;
 }
+footer nav{
+	width: 400px;
+}
+footer{
+	padding-top: 50px;
+}
+footer ul{
+	display: flex;
+	flex-direction: row;
+	/*display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-items: center;
+    align-items: center;*/
+}
+footer svg{
+	position: relative;
+	bottom: 4rem;
+	left: 7px;
+}
 footer img{
     width: 50%;
     position: relative;
     left: 6.5rem;
-    padding-bottom: 3rem;
+	bottom: 60px;
 }
 footer h3{
     display: none;
@@ -302,5 +347,57 @@ footer h3{
 footer p{
     text-align: center;
     position: relative;
-    top: 16rem;
+    top: 13rem;
+}
+@media screen and (min-width:768px) {
+	body {
+		width: 768px;
+	}
+	.nav2{
+
+		width: 768px;
+		height: 125px;
+	}
+	span a{
+		box-shadow: none;
+	}
+	.avatar{
+		bottom: 280px;
+		left: 659px;
+	}
+	.menu-icon{
+		display: none;
+	}
+	.spatula-knife{
+		width: 70px;
+		top: 0;
+		left: 0;
+		height: 80px;
+	}
+	.spatula-knife svg{
+		left: 0;
+		right: 8px;
+	}
+	.categories{
+		visibility: visible;
+		z-index: 8;
+	}
+	nav a img{
+		visibility: visible;
+	}
+	.search-container{
+		display: blocks;
+		position: relative;
+		bottom: 195rem;
+		left: 200px;
+	}
+	h1{
+		text-align: left;
+		padding-left: 10px;
+	}
+}
+@media screen and (min-width:1280px) {
+	body {
+		width: 1280px;
+	}
 }
