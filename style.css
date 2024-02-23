@@ -111,7 +111,6 @@ menu svg{
 	
 }
 img.taco{
-	padding-top: 15px;
 	width: 100%;
 }
 header p{
@@ -256,31 +255,26 @@ span a, label{
     color: #0d0d0d;
 }
 .categories li{
-    visibility: hidden;
+    display: none;
 }
 .search{
     display: none;
 }
-.search-container{
-    position: relative;
-    bottom: 171rem;
-}
-
 .avatar{
 	text-align: center;
     bottom: 0;
 	background-color: #ffffff;
 	display: block;
 	left: 305px;
-	bottom: 332px;
 	width: 109px;
 	height: 30px;
 	padding-top: 70px;
+	bottom: 9.99rem;
     
 }
 .avatar svg{
 	position: relative;
-    bottom: 65px;
+	bottom: 65px;
 }
 .spatula-knife{
     background: #eb5428;
@@ -306,9 +300,10 @@ button{
     height: 46px;
 }
 .search-container{
-    position: relative;
-    left: 2.25rem;
+    position: absolute;
+    left: 6rem;
     border-color: #eb5428;
+	bottom: 0;
 }
 input{
     width: 17.5rem;
@@ -355,15 +350,17 @@ footer p{
 	}
 	.nav2{
 		width: 768px;
-		height: 125px;
+		height: 150px;
 	}
 	span a{
 		box-shadow: none;
 	}
 	.avatar{
+		
 		display: block;
-		bottom: 280px;
+		bottom: 210px;
 		left: 659px;
+		z-index: -1;
 	}
 	.menu-icon{
 		display: none;
@@ -372,35 +369,50 @@ footer p{
 		width: 70px;
 		top: 0;
 		left: 0;
-		height: 80px;
+		height: 70px;
 	}
 	.spatula-knife svg{
-		left: 0;
+		top: 5px;
+		left: 2px;
 		right: 8px;
 	}
+	.categories li, .categories a, .categories img{
+		display: block;
+	}
+	.categories img{
+		width: 45%;
+		padding: 10px;
+		padding-top: 20px;
+	}
 	.categories{
-		visibility: visible;
-		z-index: 8;
+		display: grid;
+    	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		justify-items: center;
 	}
 	nav a img{
 		visibility: visible;
 	}
 	.search-container{
-		display: blocks;
+		display: block;
 		position: relative;
-		bottom: 195rem;
-		left: 200px;
+		bottom: 190rem;
+		left: 20rem;
 	}
 	h1{
 		text-align: left;
 		padding-left: 10px;
+		margin: 10px;
 	}
 	header img{
 
 	}
 	menu{
-		background:rgba(194, 189, 189, 0.2);
+		background:rgba(255, 255, 255, 0.6);
 		padding-bottom: 40px;
+		position:absolute;
+		width: 768px;
+		height: 10%;
+		
 	}
 	.details div{
 		justify-content: center;
