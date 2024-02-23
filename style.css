@@ -353,77 +353,77 @@ footer p{
     top: 13rem;
 }
 @media screen and (min-width:768px) {
-	body {
-		width: 768px;
+body {
+	width: 768px;
+}
+.nav2{
+	width: 768px;
+	height: 150px;
+}
+span a{
+	box-shadow: none;
+}
+.avatar{
+	display: block;
+	bottom: 210px;
+	left: 659px;
+	z-index: -1;
+}
+.menu-icon{
+	display: none;
+}
+.spatula-knife{
+	width: 70px;
+	top: 0;
+	left: 0;
+	height: 70px;
+}
+.spatula-knife svg{
+	top: 5px;
+	left: 2px;
+	right: 8px;
+}
+.categories li, .categories a, .categories img{
+	display: block;
 	}
-	.nav2{
-		width: 768px;
-		height: 150px;
-	}
-	span a{
-		box-shadow: none;
-	}
-	.avatar{
-		display: block;
-		bottom: 210px;
-		left: 659px;
-		z-index: -1;
-	}
-	.menu-icon{
-		display: none;
-	}
-	.spatula-knife{
-		width: 70px;
-		top: 0;
-		left: 0;
-		height: 70px;
-	}
-	.spatula-knife svg{
-		top: 5px;
-		left: 2px;
-		right: 8px;
-	}
-	.categories li, .categories a, .categories img{
-		display: block;
-	}
-	.categories img{
+.categories img{
 		width: 45%;
 		padding: 10px;
 		padding-top: 20px;
-	}
-	.categories{
-		display: grid;
-    	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-		justify-items: center;
-	}
-	nav a img{
-		visibility: visible;
-	}
-	.search-container{
-		display: block;
-		position: relative;
-		bottom: 190rem;
-		left: 20rem;
-	}
-	h1{
-		text-align: left;
-		padding-left: 10px;
-		margin: 10px;
-	}
+}
+.categories{
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	justify-items: center;
+}
+nav a img{
+	visibility: visible;
+}
+.search-container{
+	display: block;
+	position: relative;
+	bottom: 190rem;
+	left: 20rem;
+}
+h1{
+	text-align: left;
+	padding-left: 10px;
+	margin: 10px;
+}
 	
-	menu{
-		background:rgba(255, 255, 255, 0.6);
-		padding-bottom: 40px;
-		position:absolute;
-		width: 768px;
-		height: 10%;
+menu{
+    background:rgba(255, 255, 255, 0.6);
+    padding-bottom: 40px;
+    position:absolute;
+    width: 768px;
+    height: 10%;
 		
-	}
-	.details div{
-		justify-content: center;
-		justify-items: center;
-	}
-	.directions{
+}
+.details div{
+	justify-content: center;
+	justify-items: center;
+}
+.directions{
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 }
@@ -436,6 +436,24 @@ footer p{
 }
 .directions h2{
 	grid-row-start: 1;
+}
+
+.dishes dl{
+    grid-column-start: 1;
+}
+footer img{
+	width: 30%;
+	left: 5rem;
+	bottom: 150px;
+}
+footer nav{
+	position: relative;
+	left: 50%;
+}
+footer p{
+    right: 12rem;
+    bottom: 100px;
+    top: 8rem;
 }
 }
 
