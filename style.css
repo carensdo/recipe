@@ -97,7 +97,7 @@ nav a{
 menu a {
 	display: block;
 	position: relative;
-	top:30px;
+	top:20px;
 	left: 22px;;
 	text-decoration: none;
 	color: #eb5428;
@@ -161,7 +161,7 @@ ul, ol{
 	line-height: 1.5rem;
 	padding-bottom: 1rem;
 }
-section.ingredients ul{
+.directions ul{
 	list-style:square;
 }
 ol{
@@ -254,6 +254,14 @@ span a, label{
     text-decoration: none;
     color: #0d0d0d;
 }
+span a:hover{
+	background-color: #eb5428;
+	stroke: #ffffff;
+	color: #ffffff;
+}
+span a:hover svg{
+	stroke: #ffffff;
+}
 .categories li{
     display: none;
 }
@@ -300,10 +308,10 @@ button{
     height: 46px;
 }
 .search-container{
-    position: absolute;
-    left: 6rem;
+    position: relative;
+    left: 2.5rem;
     border-color: #eb5428;
-	bottom: 0;
+	bottom: 170rem;
 }
 input{
     width: 17.5rem;
@@ -356,7 +364,6 @@ footer p{
 		box-shadow: none;
 	}
 	.avatar{
-		
 		display: block;
 		bottom: 210px;
 		left: 659px;
@@ -403,9 +410,7 @@ footer p{
 		padding-left: 10px;
 		margin: 10px;
 	}
-	header img{
-
-	}
+	
 	menu{
 		background:rgba(255, 255, 255, 0.6);
 		padding-bottom: 40px;
@@ -418,11 +423,22 @@ footer p{
 		justify-content: center;
 		justify-items: center;
 	}
-	div .directions{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-	}
+	.directions{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
 }
+.directions ul{
+	grid-column-start: 1;
+}
+	.directions ol{
+		grid-column-start: 2;
+		line-height: 2rem;
+}
+.directions h2{
+	grid-row-start: 1;
+}
+}
+
 @media screen and (min-width:1280px) {
 	body {
 		width: 1280px;
