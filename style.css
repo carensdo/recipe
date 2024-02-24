@@ -458,7 +458,61 @@ footer p{
 }
 
 @media screen and (min-width:1280px) {
-	body {
-		width: 1280px;
-	}
+body {
+	width: 1280px;
+}
+.nav2{
+    width: 1280px;
+    height: 70px;    
+}
+.spatula-knife{
+	height: 110px;
+}
+.spatula-knife svg{
+    top: 28px;
+}
+.avatar{
+    left: 1150px; 
+    bottom: 270px
+}
+.categories{
+    width: 1091px;
+    position: relative;
+    bottom: 7.75rem;
+    left: 5rem;
+}
+menu{
+    display: flex;
+    flex-direction: column;
+    height: 43.5rem;
+    width: 10%;
+}
+h1{
+    text-align: center;
+}
+.search-container{
+    bottom: 223rem;
+    left: 30rem;
+}
+img.taco{
+    position: relative;
+    width: 80%;
+    left: 20%;
+    top: 0;
+}
+.street{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+header p{
+    grid-column-start: 2;
+}
+/*header p{
+    width: 50%;
+    line-height: 2rem;
+    position: relative;
+    bottom: 48rem;
+    left: 50%;
+    padding: 0px;
+}*/
 }
