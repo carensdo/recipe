@@ -459,8 +459,6 @@ menu{
 		grid-column-start: 2;
 		line-height: 2rem;
 }
-
-}
 .directions h2{
 	grid-row-start: 1;
 }
@@ -479,7 +477,6 @@ footer p{
     top: 8rem;
 }
 }
-
 @media screen and (min-width:1280px) {
 body {
 	width: 1280px;
