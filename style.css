@@ -94,6 +94,10 @@ li a{
 nav a{
     font-size: 20px;
 }
+menu{
+    border-color: #eb5428;
+    border-width: 2px;
+}
 menu a {
 	display: block;
 	position: relative;
@@ -180,35 +184,56 @@ footer{
 	font-family: 'Bebas Neue';
 }
 
-div img{
+.dishes img{
 	display: block;
 	position: relative;
 	left: 10px;
-	bottom: 20px;
-	width: 100px;
+	top: 29px;
+	width: 75%;
 }
-.dishes div{
+.rice{
 	display: grid;
-	grid-template-columns: 1.75fr 4fr;
-	align-items: center;
+    grid-template-columns: 1fr 2.5fr;
+    align-items: end;
 }
 .dishes svg{
 	position: relative;
 	left: 120px;
-	bottom: 30px;
 }
 .dishes h3{
 	position: relative;
-	left: 125px;
-	top: 5px;
+	left: 120px;
+	top: 50px;
 }
-.dishes dt, dd{
+strong, .rice p{
+    grid-column-start: 2;
+    padding: 1px;
+}
+strong{
+    font-weight: bold;
+}
+.salsa{
+	display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    align-items: end;
+}
+.guacamole{
+	display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    align-items: end;
+}
+.tortillas{
+	display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    align-items: end;
+}
+/*.dishes dt, dd{
 	position: relative;
     bottom: 8px;
 }
 .dishes dd{
     font-weight: bold;
-}
+}*/
 .main-nav, .dropdown{
     display: none;
 }
@@ -311,7 +336,7 @@ button{
     position: relative;
     left: 2.5rem;
     border-color: #eb5428;
-	bottom: 170rem;
+	bottom: 135rem;
 }
 input{
     width: 17.5rem;
@@ -434,12 +459,10 @@ menu{
 		grid-column-start: 2;
 		line-height: 2rem;
 }
+
+}
 .directions h2{
 	grid-row-start: 1;
-}
-
-.dishes dl{
-    grid-column-start: 1;
 }
 footer img{
 	width: 30%;
