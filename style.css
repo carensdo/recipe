@@ -94,6 +94,16 @@ li a{
 nav a{
     font-size: 20px;
 }
+/*ul {
+    max-height: 0;
+    overflow: hidden;
+}
+  input:checked ~ ul {
+    max-height: 500px;
+}
+  input {
+    display: none;
+}*/
 menu{
     border-color: #eb5428;
     border-width: 2px;
@@ -427,7 +437,7 @@ nav a img{
 .search-container{
 	display: block;
 	position: relative;
-	bottom: 190rem;
+	bottom: 197rem;
 	left: 20rem;
 }
 h1{
@@ -511,7 +521,7 @@ h1{
     text-align: center;
 }
 .search-container{
-    bottom: 223rem;
+    bottom: 178rem;
     left: 30rem;
 }
 img.taco{
@@ -535,4 +545,36 @@ header p{
     left: 50%;
     padding: 0px;
 }*/
+.details{
+    background-color: rgb(66, 57, 57);
+    color: #7abfbf;
+}
+dl{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+dt{
+    grid-row-start: 1;
+    position: relative;
+    left: 40px;
+}
+dd{
+    grid-row-start: 2;
+    position: relative;
+    right: 55px;
+}
+footer nav{
+    width: 50%;
+    padding-top: 40px;
+}
+footer ul{
+    justify-content: space-between;
+}
+footer li{
+    flex-grow: 1 1 1 1;
+}
+footer img{
+    width: 20%;
+    padding-top: 20px;
+}
 }
