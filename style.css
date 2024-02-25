@@ -94,16 +94,16 @@ li a{
 nav a{
     font-size: 20px;
 }
-/*ul {
+.categories {
     max-height: 0;
     overflow: hidden;
 }
   input:checked ~ ul {
     max-height: 500px;
 }
-  input {
+.dropdown{
     display: none;
-}*/
+}
 menu{
     border-color: #eb5428;
     border-width: 2px;
@@ -248,19 +248,24 @@ strong{
     display: none;
 }
 .menu-icon{
+    position: fixed;
     font-family: 'Bebas Neue';
-    left: 35px;
-	bottom: 0;
+    top: 0;
+    left: 32px;
+    padding-top: 70px;
+    font-size: 20px;
 }
 .hamburger{
-	position: relative;
-	right: 41px;
-	bottom: 20px;
+    top: 0;
+	position: fixed;
+	right: 29rem;
+	bottom: 32rem;
+    padding-top: 20px;
 }
-.nav2 label{
+/*.nav2 label{
 	position: relative;
 	top: 45px;
-}
+}*/
 .nav2{
 	background: #ffffff;
     position: fixed;
@@ -271,30 +276,29 @@ strong{
 	box-shadow: 1px 3px 4px rgba(132, 127, 127, 0.8);
     
 }
-span a{
+.nav2 a{
 	box-shadow: 1px 3px 4px rgba(132, 127, 127, 0.8);
 }
 nav a img{
     display: none;
 }
-nav span {
+/*nav span {
     font-family: 'Bebas Neue';
     text-decoration: none;
     font-size: 20px;
     color: #0d0d0d;
 }
-span a, label{
-    position: relative;
+/*span a, label{
     bottom: 139.75rem;
     text-decoration: none;
     color: #0d0d0d;
-}
-span a:hover{
+}*/
+a:hover{
 	background-color: #eb5428;
 	stroke: #ffffff;
 	color: #ffffff;
 }
-span a:hover svg{
+a:hover svg{
 	stroke: #ffffff;
 }
 .categories li{
@@ -304,33 +308,44 @@ span a:hover svg{
     display: none;
 }
 .avatar{
+    top: 0;
 	text-align: center;
-    bottom: 0;
 	background-color: #ffffff;
 	display: block;
 	left: 305px;
 	width: 109px;
 	height: 30px;
 	padding-top: 70px;
-	bottom: 9.99rem;
+	bottom: 28.7rem;
+    position: fixed;
+    text-decoration: none;
+    color: #0d0d0d;
+    font-family: 'Bebas Neue';
     
 }
+.nav2 a{
+    top: 0;
+    position: fixed;
+}
 .avatar svg{
-	position: relative;
-	bottom: 65px;
+	position: fixed;
+    top: 0;
+    left: 340px;
+    padding-top: 20px;
+
 }
 .spatula-knife{
     background: #eb5428;
-	bottom:0;
+    top: 0;
 	width: 200px;
-	display: block;
 	left: 105px;
 	height: 100px;
-	bottom: 44px;
+    position: fixed;
+    bottom: 28.7rem;
 }
 .spatula-knife svg{
-	position: relative;
-	left: 70px;
+	position: fixed;
+	left: 11rem;
 	top: 20px;
 }
 
@@ -338,15 +353,16 @@ button{
     background-color: #eb5428;
     border: none;
     position: relative;
+    top: 14px; 
     right: 5px;
-    top: 14px;
-    height: 46px;
 }
 .search-container{
     position: relative;
-    left: 2.5rem;
     border-color: #eb5428;
-	bottom: 135rem;
+    z-index: 2;
+    bottom: 156rem;
+    left: 2rem;
+
 }
 input{
     width: 17.5rem;
@@ -395,19 +411,24 @@ body {
 	width: 768px;
 	height: 150px;
 }
-span a{
+.nav2 a{
 	box-shadow: none;
 }
 .avatar{
+    position: fixed;
 	display: block;
 	bottom: 210px;
 	left: 659px;
 	z-index: -1;
 }
+.avatar svg{
+    left: 43.5rem;
+}
 .menu-icon{
 	display: none;
 }
 .spatula-knife{
+    position: fixed;
 	width: 70px;
 	top: 0;
 	left: 0;
@@ -422,14 +443,15 @@ span a{
 	display: block;
 	}
 .categories img{
-		width: 45%;
-		padding: 10px;
-		padding-top: 20px;
+		width: 24%;
+		padding-top: 80px;
+
 }
 .categories{
 	display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	justify-items: center;
+    padding-right: 100px;
 }
 nav a img{
 	visibility: visible;
