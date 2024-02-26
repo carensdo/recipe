@@ -197,53 +197,48 @@ footer{
 .dishes img{
 	display: block;
 	position: relative;
-	left: 10px;
-	top: 29px;
-	width: 75%;
+	padding-left: 10px;
+	width: 80%;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.rice h3, .rice p, .rice dl{
+    grid-column-start: 2;
 }
 .rice{
-	display: grid;
+    display: grid;
+    grid-template-rows: .1fr .1fr .1fr .1fr;
     grid-template-columns: 1fr 2.5fr;
-    align-items: end;
+    padding-bottom: 10px;
 }
-.dishes svg{
-	position: relative;
-	left: 120px;
-}
-.dishes h3{
-	position: relative;
-	left: 120px;
-	top: 50px;
-}
-strong, .rice p{
+.salsa h3, .salsa p, .salsa dl{
     grid-column-start: 2;
-    padding: 1px;
-}
-strong{
-    font-weight: bold;
 }
 .salsa{
-	display: grid;
+    display: grid;
+    grid-template-rows: .1fr .1fr .1fr .1fr;
     grid-template-columns: 1fr 2.5fr;
-    align-items: end;
+    padding-bottom: 10px;
 }
-.guacamole{
-	display: grid;
+.guac h3, .guac p, .guac dl{
+    grid-column-start: 2;
+}
+.guac{
+    display: grid;
+    grid-template-rows: .1fr .1fr .1fr .1fr;
     grid-template-columns: 1fr 2.5fr;
-    align-items: end;
+    padding-bottom: 10px;
+}
+.tortillas h3, .tortillas p, .tortillas dl{
+    grid-column-start: 2;
 }
 .tortillas{
-	display: grid;
+    display: grid;
+    grid-template-rows: .1fr .1fr .1fr .1fr;
     grid-template-columns: 1fr 2.5fr;
-    align-items: end;
+    padding-bottom: 10px;
 }
-/*.dishes dt, dd{
-	position: relative;
-    bottom: 8px;
-}
-.dishes dd{
-    font-weight: bold;
-}*/
 .main-nav, .dropdown{
     display: none;
 }
@@ -308,6 +303,7 @@ a:hover svg{
     display: none;
 }
 .avatar{
+    position: fixed;
     top: 0;
 	text-align: center;
 	background-color: #ffffff;
@@ -317,7 +313,6 @@ a:hover svg{
 	height: 30px;
 	padding-top: 70px;
 	bottom: 28.7rem;
-    position: fixed;
     text-decoration: none;
     color: #0d0d0d;
     font-family: 'Bebas Neue';
@@ -415,8 +410,8 @@ body {
 	box-shadow: none;
 }
 .avatar{
-    position: fixed;
-	display: block;
+    /*position: fixed;
+	display: block;*/
 	bottom: 210px;
 	left: 659px;
 	z-index: -1;
@@ -493,6 +488,39 @@ menu{
 }
 .directions h2{
 	grid-row-start: 1;
+}
+.dishes img{
+    width:100%;
+    right: 15px;
+}
+.rice, .salsa, .guac, .tortillas{
+    grid-template-columns: 1fr 4fr;
+    padding: 20px;
+
+}
+.dishes{
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+    grid-template-rows: .5fr 2fr 2fr;
+}
+.rice{
+    grid-row-start: 2;
+}
+.salsa{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.dishes h2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.guac{
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+.tortillas{
+    grid-column-start: 2;
+    grid-row-start: 3;
 }
 footer img{
 	width: 30%;
