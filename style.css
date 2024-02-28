@@ -413,8 +413,11 @@ body {
 	left: 2px;
 	right: 8px;
 }
-.categories li, .categories a, .categories img{
+.categories a, .categories img{
 	display: block;
+}
+.categories li{
+    display: block;
 }
 .categories img{
 	width: 24%;
